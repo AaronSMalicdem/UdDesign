@@ -13,5 +13,8 @@ class Expense extends Model
         'category',
         'product',
         'total_expenses',
+        'print_photo',
+        'udd_merch',
+        'custom_deals',
     ];
 }

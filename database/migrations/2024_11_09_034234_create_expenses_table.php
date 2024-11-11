@@ -16,6 +16,9 @@ return new class extends Migration
             $table->enum('category', ['OfficeUse', 'Ads', 'Maintenance', 'PrintSup', 'PackSup', 'Stocks', 'CustomSup', 'Others']);
             $table->string('product');
             $table->decimal('total_expenses', 10, 2);
+            $table->decimal('print_photo', 10, 2);
+            $table->decimal('udd_merch',10, 2);
+            $table->decimal('custom_deals', 10, 2);
             $table->timestamps();
         });
 

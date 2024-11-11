@@ -24,6 +24,9 @@ class ExpenseController extends Controller
             'category' => 'required',
             'product' => 'required',
             'total_expenses' => 'required|numeric|min:0',
+            'print_photo',
+            'udd_merch',
+            'custom_deals',
         ]);
 
         Expense::create($request->all());
@@ -43,6 +46,9 @@ class ExpenseController extends Controller
             'category' => 'required',
             'product' => 'required',
             'total_expenses' => 'required|numeric|min:0',
+            'print_photo',
+            'udd_merch',
+            'custom_deals',
         ]);
 
         $expense = Expense::findOrFail($id);

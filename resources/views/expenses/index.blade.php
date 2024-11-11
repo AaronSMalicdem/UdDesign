@@ -10,6 +10,9 @@
                 <th>Category</th>
                 <th>Product</th>
                 <th>Total Expenses</th>
+                <th>Print/Photo</th>
+                <th>UdD Merch</th>
+                <th>Custom Deals</th>
                 <th>Actions</th>
             </tr>
         </thead>
@@ -19,6 +22,9 @@
                 <td>{{ $expense->category }}</td>
                 <td>{{ $expense->product }}</td>
                 <td>{{ number_format($expense->total_expenses, 2) }}</td>
+                <td>{{ number_format($expense->print_photo, 2) }}</td>
+                <td>{{ number_format($expense->udd_merch, 2) }}</td>
+                <td>{{ number_format($expense->custom_deals, 2) }}</td>
                 <td>
                     <a href="{{ route('expenses.edit', $expense->id) }}" class="btn btn-primary btn-sm">Edit</a>
                     <form action="{{ route('expenses.destroy', $expense->id) }}" method="POST" style="display:inline;">
